@@ -76,7 +76,7 @@
     </div>
     <div class = "information">
         <div class = "border">
-            <div class = "label-title">— 艺考资讯 —</div>
+            <div class = "label-title">— 艺考咨询 —</div>
             <div class = "label-content">EXAM INFORMATION</div>
         </div><hr>
         <% for (int i = 0; i < 5; i++) { %>
