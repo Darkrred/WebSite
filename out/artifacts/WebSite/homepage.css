@@ -211,6 +211,12 @@ hr{
     background-size: cover;
     box-shadow: 10px 10px 10px lightgray;
     margin-top: 20px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s
+}
+.information-block:hover{
+    background: gold;
+    cursor: pointer;
 }
 .information-title{
     font-size: 20px;

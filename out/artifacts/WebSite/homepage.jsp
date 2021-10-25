@@ -6,8 +6,9 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.text.*" %>
-<%@ page import="java.sql.*" %>
+<%@ page import="com.beans.*" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <html>
 <head>
     <title>中艺星源教育-中艺星源艺术学校</title>
@@ -24,7 +25,7 @@
         <div class = "border">
             <div class = "label-title">— 热门专业 —</div>
             <div class = "label-content">POPULAR MAJOR</div>
-        </div>
+        </div><hr>
         <div class = "majors-row">
             <img class = "major" src="images/pic_broadcast.PNG">
             <img class = "major" src="images/pic_direct.PNG">
@@ -74,20 +75,25 @@
             </div>
         </div>
     </div>
+    <%
+        DAO dao = new DAO();
+        ArrayList<Information> arrayList = dao.ShowInformation();
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
+        int size = 5; if (arrayList.size() < 5) size = arrayList.size();
+    %>
     <div class = "information">
         <div class = "border">
-            <div class = "label-title">— 艺考咨询 —</div>
+            <div class = "label-title">— 艺考资讯 —</div>
             <div class = "label-content">EXAM INFORMATION</div>
         </div><hr>
-        <% for (int i = 0; i < 5; i++) { %>
-        </script>
+        <% for (int i = 0; i < size; i++) { %>
         <div class = "information-block">
             <p class = "information-p">|</p>
             <div class = "title-and-content">
-                <div class = "information-title">资讯标题</div>
-                <div class = "information-content">资讯内容/资讯内容/资讯内容/资讯内容/资讯内容/资讯内容/资讯内容/资讯内容/资讯内容/资讯内容/</div>
+                <div class = "information-title"><%=arrayList.get(i).getInformation_title()%></div>
+                <div class = "information-content"><%=arrayList.get(i).getInformation_content()%></div>
             </div>
-            <div class = "information-time">2021/10/23 11:31:46</div>
+            <div class = "information-time"><%=formatter.format(arrayList.get(i).getInformation_time())%></div>
         </div>
         <% } %>
     </div>
@@ -95,7 +101,7 @@
         <div class = "border">
             <div class = "label-title">— 免费预约 —</div>
             <div class = "label-content">ORDER FOR FREE</div>
-        </div>
+        </div><hr>
         <div class = "order-form-list">
             <img class = "order-left-pic" src="images/left-pic.PNG">
             <form name="order-form" method = "post" action="com/servlets/OrderServlet">
