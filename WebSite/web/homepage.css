@@ -245,7 +245,7 @@ hr{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 750px;
+    height: 820px;
     background: white;
     background-size: cover;
     box-shadow: 10px 10px 10px lightgray;
@@ -255,7 +255,6 @@ hr{
 .order-form-list{
     display: flex;
     align-items: center;
-    align-content: center;
 }
 .order-left-pic{
     width: 300px;
@@ -290,7 +289,6 @@ hr{
     height: 80px;
     font-size: 30px;
     font-weight: bold;
-    font-family: Consolas;
     letter-spacing: 5px;
     /*color: ghostwhite;*/
     color: black;
@@ -300,4 +298,28 @@ hr{
     box-shadow: 10px 10px 10px lightgray;
     margin-right: 30px;
     margin-left: 50px;
+}
+.order-buttons{
+    display: flex;
+    align-items: center;
+}
+.info-submit{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 200px;
+    height: 50px;
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    background:black;
+    border: none;
+    box-shadow: 10px 10px 10px lightgray;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s
+}
+.info-submit:hover{
+    background: red;
+    cursor: pointer;
 }

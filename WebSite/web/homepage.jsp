@@ -13,6 +13,12 @@
 <head>
     <title>中艺星源教育-中艺星源艺术学校</title>
     <link rel="stylesheet" type="text/css" href="homepage.css">
+    <script type="text/javascript">
+        function submit_success(){
+            window.alert("提交成功!");
+            return true;
+        }
+    </script>
 </head>
 <body>
     <img class = "left-pic" src="images/left-pic.PNG">
@@ -104,11 +110,15 @@
         </div><hr>
         <div class = "order-form-list">
             <img class = "order-left-pic" src="images/left-pic.PNG">
-            <form name="order-form" method = "post" action="com/servlets/OrderServlet">
+            <form name="order-form" method = "post" action="submit_order.jsp">
                 <div class = "order-form-frame"><div class = "order-form-content">&nbsp;您的姓名:</div><input class = "order-input" type="text" name="name"></div>
-                <div class = "order-form-frame"><div class = "order-form-content">&nbsp;联系方式:</div><input class = "order-input" type="text" name="tel/wx"></div>
+                <div class = "order-form-frame"><div class = "order-form-content">&nbsp;联系方式:</div><input class = "order-input" type="text" name="tel_or_wx"></div>
                 <div class = "order-form-frame"><div class = "order-form-content">&nbsp;课程分类:</div><input class = "order-input" type="text" name="classify"></div>
                 <div class = "order-form-frame"><div class = "order-form-content">&nbsp;问题描述:</div><input class = "order-input" type="text" name="question"></div>
+                <div class = "order-buttons">
+                    <input type="submit" class="info-submit" value="提交" onclick="return submit_success()">
+                    <input type="reset" class="info-submit" value="清空">
+                </div>
             </form>
             <img class = "order-right-pic" src="images/right-pic.PNG">
         </div>
