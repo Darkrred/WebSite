@@ -27,7 +27,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 500px;
     background: white;
     background-size: cover;
     margin-top: 30px;
@@ -80,6 +79,10 @@ hr{
     line-height: 25px;
     letter-spacing: 1px;
     color: black;
+    width: 820px; /*对宽度的定义,根据情况修改*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .time{
     position: absolute;

@@ -1,5 +1,5 @@
 body{
-    margin: 0px;
+    margin: 0;
     background: #f3f3f3;
 }
 .left-pic{
@@ -7,14 +7,12 @@ body{
     z-index:999;
     top:30%;left:1%;
     width: 190px;
-    box-shadow: 10px 10px 10px lightgray;
 }
 .right-pic{
     position:fixed;
     z-index:999;
     top:30%;right:1%;
     width: 190px;
-    box-shadow: 10px 10px 10px lightgray;
 }
 .theme{
     display: flex;
@@ -144,7 +142,6 @@ body{
     color: white;
     font-weight: bold;
     font-size: 40px;
-    font-family: Consolas;
     text-align: center;
     letter-spacing: 4px;
     background: black;
@@ -171,7 +168,6 @@ body{
     color: white;
     font-weight: bold;
     font-size: 20px;
-    font-family: Consolas;
     text-align: center;
     letter-spacing: 2px;
     background: black;
@@ -195,10 +191,11 @@ hr{
     border-top:1px solid #f3f3f3;
 }
 .information-p{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bolder;
-    font-family: Consolas;
-    margin-left: 10px ;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 4px;
     /*color: ghostwhite;*/
     color: black;
 }
@@ -212,7 +209,7 @@ hr{
     box-shadow: 10px 10px 10px lightgray;
     margin-top: 20px;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s
+    transition-duration: 0.4s;
 }
 .information-block:hover{
     background: gold;
@@ -220,23 +217,24 @@ hr{
 }
 .information-title{
     font-size: 20px;
-    font-family: Consolas;
     line-height: 25px;
     letter-spacing: 2px;
     color: black;
 }
 .information-content{
     font-size: 15px;
-    font-family: Consolas;
     line-height: 25px;
     letter-spacing: 1px;
     color: black;
+    width: 820px; /*对宽度的定义,根据情况修改*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .information-time{
     position: absolute;
     right: 22%;
     font-size: 15px;
-    font-family: Consolas;
     line-height: 20px;
     letter-spacing: 1px;
     color: black;
@@ -274,7 +272,6 @@ hr{
 .order-form-content{
     font-size: 30px;
     font-weight: bold;
-    font-family: Consolas;
     width: 200px;
     line-height: 80px;
     letter-spacing: 5px;

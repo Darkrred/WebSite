@@ -21,6 +21,7 @@
     </script>
 </head>
 <body>
+    <%@include file="navigation.jsp" %>
     <img class = "left-pic" src="images/left-pic.PNG">
     <img class = "right-pic" src="images/right-pic.PNG">
     <div class = "theme">
@@ -93,14 +94,14 @@
             <div class = "label-content">EXAM INFORMATION</div>
         </div><hr>
         <% for (int i = 0; i < size; i++) { %>
-        <div class = "information-block">
+        <a href="article.jsp?title=<%=arrayList.get(i).getInformation_title()%>"><div class = "information-block">
             <p class = "information-p">|</p>
             <div class = "title-and-content">
                 <div class = "information-title"><%=arrayList.get(i).getInformation_title()%></div>
                 <div class = "information-content"><%=arrayList.get(i).getInformation_content()%></div>
             </div>
             <div class = "information-time"><%=formatter.format(arrayList.get(i).getInformation_time())%></div>
-        </div>
+        </div></a>
         <% } %>
     </div>
     <div class = "order">
@@ -123,5 +124,6 @@
             <img class = "order-right-pic" src="images/right-pic.PNG">
         </div>
     </div>
+    <%@include file="address_and_copyright.jsp"%>
 </body>
 </html>
