@@ -14,6 +14,7 @@
 <head>
     <title>中艺星源教育-后台管理</title>
     <link rel="stylesheet" type="text/css" href="backstage.css">
+    <link rel="icon"       type="text/css" href="images/brand.png">
     <script type="text/javascript">
         function submit_success(){
             window.alert("提交成功!");

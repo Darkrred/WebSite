@@ -13,6 +13,7 @@
 <head>
     <title><%=request.getParameter("title")%>-中艺星源教育</title>
     <link rel="stylesheet" type="text/css" href="article.css">
+    <link rel="icon"       type="text/css" href="images/brand.png">
 </head>
 <body>
     <%@include file="navigation.jsp" %>
