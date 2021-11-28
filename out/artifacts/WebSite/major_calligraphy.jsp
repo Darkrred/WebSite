@@ -319,7 +319,7 @@
             <p class = "information-p">|</p>
             <div class = "title-and-content">
                 <div class = "information-title"><%=arrayList.get(i).getInformation_title()%></div>
-                <div class = "information-content"><%=arrayList.get(i).getInformation_content()%></div>
+                <div class = "information-content" style="width: 750px;"><%=arrayList.get(i).getInformation_content()%></div>
             </div>
             <div class = "information-time"><%=formatter.format(arrayList.get(i).getInformation_time())%></div>
         </div></a>

@@ -471,7 +471,7 @@ body{
     line-height: 25px;
     letter-spacing: 1px;
     color: black;
-    width: 780px; /*对宽度的定义,根据情况修改*/
+    /*对宽度的定义,根据情况修改*/
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

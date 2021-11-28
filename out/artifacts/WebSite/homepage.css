@@ -278,7 +278,7 @@ hr{
     line-height: 25px;
     letter-spacing: 1px;
     color: black;
-    width: 780px; /*对宽度的定义,根据情况修改*/
+    /*对宽度的定义,根据情况修改*/
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -342,6 +342,12 @@ hr{
     background: aliceblue;
     /*color: ghostwhite;*/
     color: black;
+}
+.order-select{
+    font-size: 15px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px blueviolet solid;
 }
 .order-right-pic{
     width: 300px;

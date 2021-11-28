@@ -43,7 +43,7 @@
                 <p class = "information-p">|</p>
                 <div class = "title-and-content">
                     <div class = "information-title"><%=arrayList_info.get(i).getInformation_title()%></div>
-                    <div class = "information-content"><%=arrayList_info.get(i).getInformation_content()%></div>
+                    <div class = "information-content" style="width:850px"><%=arrayList_info.get(i).getInformation_content()%></div>
                 </div>
                 <div class = "time"><%=formatter.format(arrayList_info.get(i).getInformation_time())%></div>
                 <div class="info-delete-frame">
