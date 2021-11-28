@@ -15,7 +15,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     position: fixed;
-    bottom: 2%;
+    bottom: 0;
     right: -603px;
     width: 603px;
     height: 376px;
@@ -56,12 +56,12 @@ a:hover{
     width: 414px;
 }
 .service-left-top-content{
-    height: 300px;
+    height: 310px;
     background: #f7f7f7;
     border: 1px solid #dedede;
 }
 .service-left-top-title{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
     font-weight: bold;
     font-size: 15px;
@@ -73,49 +73,46 @@ a:hover{
     margin-left: 10px;
     margin-right: 10px;
     border: 1px solid #dedede;
-    height: 250px;
-    background: #addee7;
+    height: 245px;
+    background: white;
+    padding: 10px;
+}
+.introduce-p1{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.introduce-p2{
+    color: darkred;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.introduce-p3{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
 }
 .service-left-bottom-content{
-    display: flex;
-    height: 36px;
-    background: white;
+    color: white;
+    height: 26px;
+    line-height: 26px;
+    background: cornflowerblue;
     border: 1px solid #dedede;
-}
-.service-left-bottom-input{
-    border: none;
-    outline: none;
-    width: 334px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    /*color: ghostwhite;*/
-    color: black;
-    margin-left: 4px;
-}
-.service-left-bottom-button{
-    background-color: red;
-    color:white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
-    letter-spacing: 5px;
-    width:69px; height:36px;
-    border: none;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    padding-right: 1px;
-}
-.service-left-bottom-button:hover{
-    background: gold;
-    cursor: pointer;
+    letter-spacing: 2px;
+    text-align: center;
 }
 .service-right-content{
     height: 336px;
 }
 .service-hide{
     position: fixed;
-    right: 0; bottom: 2%;
+    right: 0; bottom: 0;
     background-color: red;
     color:white;
     font-size: 20px;

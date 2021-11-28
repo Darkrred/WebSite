@@ -22,7 +22,7 @@
     </script>
 </head>
 <body>
-    <%@include file="navigation-homepage.jsp" %>
+    <%@include file="navigation.jsp" %>
     <div class = "theme">
         <div class = "theme-title">一起决胜艺术高考</div>
         <div class = "theme-content">— 资深教育品牌助你展翅高飞 —</div>

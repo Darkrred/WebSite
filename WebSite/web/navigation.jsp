@@ -55,14 +55,14 @@
       <div class="service-left-top-content">
         <div class="service-left-top-title">中艺星源老师&nbsp;<%=dateFormat.format(date)%></div>
         <div class="service-left-top-introduce">
-
+          <div class="introduce-p1">&emsp;&emsp;您好！我是中艺星源赵老师!</div>
+          <div class="introduce-p2">&emsp;&emsp;中艺星源真诚专业的为每一位家长和同学提供免费的艺术高考规划咨询，名额有限，先报先得哦！</div>
+          <img src="images/QR-code.PNG" style="width: 150px;margin-left: 110px;margin-bottom: 5px;">
+          <div class="introduce-p3">&emsp;&emsp;中艺星源祝每一位考生都能在艺术考试中大放光彩！</div>
         </div>
       </div>
       <div class="service-left-bottom-content">
-        <form>
-          <input class="service-left-bottom-input" type="text" placeholder="请输入您的留言......" name="message">
-          <input class="service-left-bottom-button" type="submit" value="提交">
-        </form>
+        — 电话联系我们：13666268832 —
       </div>
     </div>
     <img class="service-right-content" src="images/service_pic.png">

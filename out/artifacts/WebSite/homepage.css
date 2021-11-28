@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background: #f3f3f3;
+    overflow-x: hidden;
 }
 .left-pic{
     position:fixed;
@@ -345,9 +346,6 @@ hr{
 }
 .order-select{
     font-size: 15px;
-    height: 32px;
-    line-height: 30px;
-    border: 1px blueviolet solid;
 }
 .order-right-pic{
     width: 300px;
