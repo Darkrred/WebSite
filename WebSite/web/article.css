@@ -3,7 +3,6 @@ body{
     background: #f3f3f3;
 }
 .frame{
-    display: flex;
     background: white;
     margin-bottom: 30px;
     box-shadow: 10px 10px 10px lightgray;
@@ -14,7 +13,6 @@ body{
     width: 780px;
     background: lightblue;
     margin-top: 30px;
-    margin-left: 270px;
     box-shadow: 10px 10px 10px lightgray;
 }
 .article-title{
@@ -47,7 +45,6 @@ body{
     width: 780px;
     margin-top: 50px;
     margin-bottom: 30px;
-    margin-left: 270px;
     box-shadow: 10px 10px 10px lightgray;
 }
 .right-frame{
